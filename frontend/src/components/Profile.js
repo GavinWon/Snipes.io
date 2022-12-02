@@ -11,7 +11,7 @@ import useAuth from '../hooks/useAuth';
 
 function Profile() {
     const { token } = useAuth();
-    const [user, setUser] = useState('test');
+    const [user, setUser] = useState('');
     const [history, setHistory] = useState([]);
 
     const getProfile = async () => {
